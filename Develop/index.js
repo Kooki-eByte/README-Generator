@@ -21,7 +21,7 @@ function promptUser() {
   return inquirer.prompt([
     {
       type: "input",
-      name: "project",
+      name: "title",
       message: questions[0],
     },
     {
