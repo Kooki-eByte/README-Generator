@@ -4,20 +4,48 @@ function generateMarkdown(data) {
   # ${data.title}
   ## Table of Contents
 
-  1. [Documentation](#my-first-title)
-    1. [Description](#my-second-title)
-    2. [Installion Instructions](#my-second-title)
-    3. [Usage Information](#my-second-title)
-  2. [Test Instructions](#my-second-title) 
-  3. [Contribution Guideline](#my-second-title)
-  4. [License](#my-second-title)
-  5. [Questions](#my-second-title)
+  1. [Documentation](#documentation)
+    1. [Description](#description)
+    2. [Installion Instructions](#installion)
+    3. [Usage Information](#usage)
+  2. [Test Instructions](#test)
+  3. [Contribution Guideline](#contribution)
+  4. [License](#license)
+  5. [Questions](#questions)
 
-  ## My first title
+  ## Documentation <a name="documentation"></a>
 
-  
+  ### Description <a name="description"></a>
 
-  ## My second title
+  - ${data.description}
+
+  ### Installion Instructions <a name="installion"></a>
+
+  - ${data.install}
+
+  ### Usage Information <a name="usage"></a>
+
+  - ${data.usage}
+
+  ## Test Instructions <a name="test"></a>
+
+  - ${data.test}
+
+  ## Contribution Guideline <a name="contribution"></a>
+
+  - ${data.contribute}
+
+  ## License <a name="license"></a>
+
+  - ${data.whatLicense}
+
+  ## Questions <a name="questions"></a>
+
+  For any further questions checkout my **github page** and/or contact me by my **email**
+  - ${data.username}
+  - ${data.email}
+
+
 `;
 }
 
