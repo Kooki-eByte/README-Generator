@@ -2,13 +2,15 @@
 function generateMarkdown(data) {
   return `
   # ${data.title}
-  ![APM](https://img.shields.io/apm/l/vim-mode?style=plastic)
+  ![GitHub](https://img.shields.io/github/license/${data.username}/${data.title})
   ## Table of Contents
 
   1. [Documentation](#documentation)
-    1. [Description](#description)
-    2. [Installion Instructions](#installion)
-    3. [Usage Information](#usage)
+
+      1. [Description](#description)
+      2. [Installion Instructions](#installion)
+      3. [Usage Information](#usage)
+
   2. [Test Instructions](#test)
   3. [Contribution Guideline](#contribution)
   4. [License](#license)
