@@ -2,6 +2,7 @@
 function generateMarkdown(data) {
   return `
   # ${data.title}
+  ![APM](https://img.shields.io/apm/l/vim-mode?style=plastic)
   ## Table of Contents
 
   1. [Documentation](#documentation)
