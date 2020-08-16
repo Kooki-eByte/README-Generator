@@ -8,7 +8,6 @@ const questions = [
   "Please enter a description of what your project is about...",
   "How would you install this project and how would you install the dependencies (if any)?",
   "How would this project be used?",
-  "what license are you using for this project?",
   "What are the guidelines to contributions to be made to your project?",
   "How do you test your project?",
   "What license will you be using?",
@@ -38,11 +37,6 @@ function promptUser() {
       type: "input",
       name: "usage",
       message: questions[3],
-    },
-    {
-      type: "input",
-      name: "whatLicense",
-      message: questions[4],
     },
     {
       type: "input",
