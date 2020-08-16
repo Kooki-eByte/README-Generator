@@ -40,14 +40,17 @@ function generateMarkdown(data) {
 
   ## License <a name="license"></a>
 
-  - ${data.whatLicense}
+  - This Application is covered under the ${data.licensebadge} License.
 
   ## Questions <a name="questions"></a>
+   For any further questions checkout my **github page**
+   - [${data.username}](https://github.com/${data.username})
 
-  For any further questions checkout my **github page** and/or contact me by my **email**
-  - ${data.username}
+   and/or...
+   
+   contact me by my **email** with a detailed Subject and message to what the message is for. _Only Contact my email for anymore questions related to contributing to this project._
+
   - ${data.email}
-
 
 `;
 }
