@@ -1,3 +1,4 @@
+// The modules we will be using for this project
 const fs = require("fs");
 const inquirer = require("inquirer");
 const genMarkdown = require("./Develop/utils/generateMarkdown");
