@@ -1,6 +1,6 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
-const genMarkdown = require("./utils/generateMarkdown");
+const genMarkdown = require("./Develop/utils/generateMarkdown");
 
 // array of questions for user
 const questions = [
@@ -41,32 +41,32 @@ function promptUser() {
     {
       type: "input",
       name: "contribute",
-      message: questions[5],
+      message: questions[4],
     },
     {
       type: "input",
       name: "test",
-      message: questions[6],
+      message: questions[5],
     },
     {
       type: "rawlist",
       name: "licensebadge",
-      message: questions[7],
+      message: questions[6],
       choices: ["None", "MIT", "Apache", "GPL"],
     },
     {
       type: "input",
       name: "username",
-      message: questions[8],
+      message: questions[7],
     },
     {
       type: "input",
       name: "email",
-      message: questions[9],
+      message: questions[8],
     },
   ]);
 }
-
+// To run a test you would just type "npm run test" in order for the jest to run a test on the functions it is testing.
 // function to write README file
 function writeToFile(fileName, data) {
   fs.writeFile(fileName, data, (err) => {
@@ -83,7 +83,7 @@ async function init() {
     const readMe = genMarkdown(answers);
 
     await writeToFile("README.md", readMe);
-    console.log("successFully wrote the README.md");
+    console.log("\nsuccessFully wrote the README.md\n");
   } catch (err) {
     console.log(err);
   }
