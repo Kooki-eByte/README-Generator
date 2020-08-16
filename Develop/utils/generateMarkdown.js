@@ -5,7 +5,7 @@ function generateMarkdown(data) {
   ![GitHub](https://img.shields.io/github/license/${data.username}/${data.title})
   ## Table of Contents
 
-  1. [Documentation](#documentation)
+  1. [Documentation](#documentation)\n
 
       1. [Description](#description)
       2. [Installion Instructions](#installion)

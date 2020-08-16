@@ -4,7 +4,7 @@ const genMarkdown = require("./utils/generateMarkdown");
 
 // array of questions for user
 const questions = [
-  "What is the name of your project?",
+  "What is the name of your project? (Give the name you have on github)",
   "Please enter a description of what your project is about...",
   "How would you install this project and how would you install the dependencies (if any)?",
   "How would this project be used?",
@@ -58,7 +58,7 @@ function promptUser() {
       type: "rawlist",
       name: "licensebadge",
       message: questions[7],
-      choices: ["None", "MIT"],
+      choices: ["None", "MIT", "Apache", "GPL"],
     },
     {
       type: "input",
