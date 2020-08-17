@@ -8,7 +8,7 @@ function generateMarkdown(data) {
   1. [Documentation](#documentation)\n
 
       1. [Description](#description)
-      2. [Installion Instructions](#installion)
+      2. [Installation Instructions](#Installation)
       3. [Usage Information](#usage)
 
   2. [Test Instructions](#test)
@@ -22,7 +22,7 @@ function generateMarkdown(data) {
 
   - ${data.description}
 
-  ### Installion Instructions <a name="installion"></a>
+  ### Installation Instructions <a name="Installation"></a>
 
   - ${data.install}
 
